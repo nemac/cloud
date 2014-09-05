@@ -8,8 +8,8 @@ if [ ! -d $DIR/cloudmanager ] ; then
     echo "cloudmanager subdirectory not found"
     exit -1
 fi
-if [ ! -d $DIR/cloud ] ; then
-    echo "cloud subdirectory not found"
+if [ ! -d $DIR/cloudconf ] ; then
+    echo "cloudconf subdirectory not found"
     exit -1
 fi
 
