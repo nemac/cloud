@@ -37,4 +37,6 @@ add_bindir_to_path $DIR/cloudmanager
 # set required environment variables
 #
 
-. setup-vars.sh
+export SETUP_SH_RUNNING=1
+. config.sh
+unset SETUP_SH_RUNNING

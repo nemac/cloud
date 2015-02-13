@@ -4,4 +4,4 @@ cirrus
 cloudconf
 cloudmanager
 cloudusers
-setup-vars.sh
+config.sh
