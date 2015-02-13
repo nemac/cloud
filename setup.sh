@@ -37,10 +37,4 @@ add_bindir_to_path $DIR/cloudmanager
 # set required environment variables
 #
 
-export CIRRUS_HOME=$DIR/cirrus
-export CIRRUS_KEYS=$DIR/keys
-export CIRRUS_AWS_KEYS=$CIRRUS_KEYS/aws.json
-export NODE_PATH=$CIRRUS_HOME/cirrus/node_modules
-
-export CLOUDMANAGER_PROVISION_DIR=$DIR/cloudconf
-export CLOUDMANAGER_USERS=$DIR/cloudusers/users.json
+. setup-vars.sh
