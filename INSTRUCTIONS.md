@@ -131,8 +131,10 @@ Steps
    easily tell the difference between an ssh session on the new server
    and one on the old server.  You can use the following command,
    however, to confirm the EC2 instance id of the server:
-
-       wget -q -O - http://instance-data/latest/meta-data/instance-id
+   
+   ```
+   wget -q -O - http://instance-data/latest/meta-data/instance-id
+   ```
        
    Make sure this instance id corresponds to the new `new-cloudx`
    instance.
