@@ -91,7 +91,11 @@ Steps
    (do NOT terminate it).
    
 1. Once `new-cloudx` has finished stopping, detatch the
-   `new-cloudx-root-default` volume from it.
+   `new-cloudx-root-default` volume from it.  (In general you will not
+   need this volume at all from this point on, but refrain from
+   actually deleting it until one of the last steps below, just in
+   case there are problems booting the instance with the clone
+   drives.)
    
 1. Attach the `new-cloudx-root` volume (the clone of the original root
    volume that you created above) to the `new-cloudx` instance, using
