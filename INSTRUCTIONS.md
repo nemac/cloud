@@ -129,7 +129,9 @@ Steps
    sure you can ssh to it using the name `cloudx.nemac.org`.  Note
    that assuming everything has worked correctly, you won't be able to
    easily tell the difference between an ssh session on the new server
-   and one on the old server.  You can use the following command,
+   and one on the old server.  The new server will have the same
+   "cloudx" prompt that the old one had/has, and in general will
+   be the same in every other way.  You can use the following command,
    however, to confirm the EC2 instance id of the server:
    
    ```
