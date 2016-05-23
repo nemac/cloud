@@ -49,7 +49,7 @@ has a long (month or so?) track record of working correctly.
 Steps
 -----
 
-1. Assume that the instance we are rebuilding is named `cloudx`.
+1. Assume that the instance you are rebuilding is named `cloudx`.
    This instance will have several resources associated with it
    in AWS:  
 
