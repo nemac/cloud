@@ -110,17 +110,19 @@ Steps
 1. Restart `new-cloudx`.
 
 1. Once `new-cloudx` has finished booting, make note of its public IP
-   address and ssh to it.  (You should be able to ssh in using
-   whatever credentials work for the original `cloudx`.)  Poke around
-   in the shell to confirm that everything looks good (verify that the
-   nappl applications are present in /var/vsites/..., that all data
-   drives are present in the correct places, etc).
+   address and ssh to it using this number (at this point the name
+   `cloudx.nemac.org` still refers to the old server).  You should be
+   able to ssh in using whatever credentials work for the original
+   `cloudx`.  Poke around in the shell to confirm that everything
+   looks good (verify that the nappl applications are present in
+   /var/vsites/..., that all data drives are present in the correct
+   places, etc).
    
 1. Assuming everything looks good on `new-cloudx`, disassociate the
    relevant elastic ip address from `cloudx` and re-associate it to
-   `new-cloudx`.  This will cause all internet traffic for the name
-   `cloudx.nemac.org` to go to the new instance rather than the old
-   one.
+   `new-cloudx`.  This will cause all internet traffic (http, ssh, and
+   anything else) for the name `cloudx.nemac.org` to go to the new
+   instance rather than the old one.
 
 1. Test the new instance thoroughly by visiting any web sites running
    on it and checking that its applications work property.  Also make
